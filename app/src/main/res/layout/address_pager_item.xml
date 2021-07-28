@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wind.addressdemo.ItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    >
+
+    <include android:id="@+id/address_main" layout="@layout/address_main"/>
+    <include android:id="@+id/item_right_menu" layout="@layout/item_right_menu"/>
+
+
+
+
+
+</com.wind.addressdemo.ItemView>
