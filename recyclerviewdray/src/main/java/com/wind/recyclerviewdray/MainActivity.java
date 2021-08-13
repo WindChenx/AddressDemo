@@ -198,9 +198,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
             float topY = viewHolder.itemView.getTop() + dY;
             float bottomY = topY + viewHolder.itemView.getHeight();
-            if (topY < -60)
+            if (topY < 0)
             {
-                dY = -60;
+                dY = -viewHolder.itemView.getTop();
             }
             else if (bottomY > recyclerView.getHeight())
             {
